@@ -26,7 +26,7 @@ html {
     --spacing-6: 48px;
     --spacing-8: 64px;
     --spacing-12: 96px;
-    --spacing-16: 8px;
+    --spacing-16: 128px;
 
     font-size: 18px;
     /* Font  */
@@ -72,20 +72,8 @@ header {
     margin-right: auto;
 }
 
-.intro-chunk,
-.card {
-    padding: var(--spacing-2);
-    background-color: var(--color-white);
-}
-
-.card {
-    border-bottom: 4px solid var(--color-gray-30);
-}
-
-.title {
-    margin: 0;
-    margin-bottom: var(--spacing-6);
-    font-size: var(--font-xl);
+.intro-chunk {
+    padding-top: var(--spacing-4);
 }
 
 .intro-chunk p {
@@ -95,6 +83,19 @@ header {
 
 .intro-chunk strong {
     color: var(--color-primary);
+}
+
+.title {
+    margin: 0;
+    margin-bottom: var(--spacing-6);
+    font-size: var(--font-xl);
+}
+
+.card {
+    border-bottom: 4px solid var(--color-gray-30);
+    padding: var(--spacing-2);
+    background-color: var(--color-white);
+    margin: -24px;
 }
 
 .indented-heading {
