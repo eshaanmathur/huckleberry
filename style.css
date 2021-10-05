@@ -110,7 +110,7 @@ header {
     background-color: var(--color-secondary-light);
     border-bottom: 8px solid var(--color-secondary-dark);
     padding: var(--spacing-2) var(--spacing-3);
-    margin-left: var(--spacing--3);
+    margin-left: var(--spacing--4);
     margin-top: var(--spacing--2);
     width: fit-content;
 }
@@ -123,8 +123,17 @@ header {
     margin: 0;
 }
 
-@media (min-width: 664px) {
+@media (max-width: 640px) {
+    .intro-chunk {
+        padding-left: var(--spacing-3);
+        padding-right: var(--spacing-3);
+    }
+
     .indented-heading {
-        margin-left: var(--spacing--4);
+        margin-left: var(--spacing--3);
+    }
+
+    .card {
+        margin: 0;
     }
 }
