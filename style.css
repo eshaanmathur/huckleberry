@@ -11,6 +11,12 @@ body {
 
 /* Add styles here! */
 
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
 html {
     /* Spacing */
     --spacing-1: 8px;
@@ -22,6 +28,7 @@ html {
     --spacing-12: 96px;
     --spacing-16: 8px;
 
+    font-size: 18px;
     /* Font  */
     --font-base: 1rem;
     --font-md: 1.25rem;
@@ -78,6 +85,7 @@ header {
 .title {
     margin: 0;
     margin-bottom: var(--spacing-6);
+    font-size: var(--font-xl);
 }
 
 .intro-chunk p {
@@ -95,10 +103,15 @@ header {
     padding: var(--spacing-2) var(--spacing-3);
     margin-top: -8px;
     margin-left: -16px;
+    width: fit-content;
 }
 
-.intro-chunk p {
+.card p {
     margin: var(--spacing-3) 0;
+}
+
+.card p:last-child {
+    margin: 0;
 }
 
 @media (min-width: 664px) {
